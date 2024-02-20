@@ -1,0 +1,9 @@
+@use "./utilities/base";
+@use "./pages/homepage/header";
+@use "./pages/homepage/footer";
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}

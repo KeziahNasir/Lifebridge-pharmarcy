@@ -1,0 +1,65 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+footer{
+    background-color: $green-cyan;
+    height: 70vh;
+    text-align: center;
+}
+.footer__logo{
+    @include flex(center,center);
+    text-align: center;
+}
+.footercontent{
+    @include flex(space-around,center);
+}
+.footercontent h1{
+    padding: 2rem 0;
+}
+.footercontent h3{
+    padding: 1rem 0;
+}
+footer button a{
+    text-decoration: none;
+    color: white;
+}
+.btn-top button{
+    padding: 1rem 3rem;
+    background-color: $cyan-blue;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+.footer-input button{
+    padding: 1rem 3rem;
+    background-color: $cyan-blue;
+    font-size: 2rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.footer-input{
+    @include flex(center,center);
+    
+}
+footer input{
+    padding: 1.6rem 3rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.btn-top{
+    @include flex(center,center);
+    margin-top: 3rem;
+}
+footer p{
+    word-spacing: 7px;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+}
+.footer__center{
+    text-align: center;
+}
+.footer{
+    width: 30%;
+}

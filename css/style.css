@@ -1,3 +1,187 @@
-.body{
-    background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerpart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header__right button {
+  padding: 1rem 3rem;
+  background-color: #0693e3;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.header__right button a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hero {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #ff6900;
+  margin-bottom: 3rem;
+}
+
+.hero__right {
+  width: 50%;
+}
+
+.hero__left {
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 4rem;
+}
+
+.hero ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  font-size: 4rem;
+}
+
+.hero ul a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+.hero ul a:hover {
+  background-color: #0693e3;
+}
+
+footer {
+  background-color: #00d084;
+  height: 70vh;
+  text-align: center;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footercontent h1 {
+  padding: 2rem 0;
+}
+
+.footercontent h3 {
+  padding: 1rem 0;
+}
+
+footer button a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-top button {
+  padding: 1rem 3rem;
+  background-color: #0693e3;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer-input button {
+  padding: 1rem 3rem;
+  background-color: #0693e3;
+  font-size: 2rem;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer input {
+  padding: 1.6rem 3rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.btn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+footer p {
+  word-spacing: 7px;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.footer__center {
+  text-align: center;
+}
+
+.footer {
+  width: 30%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }

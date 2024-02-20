@@ -1,0 +1,66 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+.headerpart{
+    @include flex(space-between,center);
+    
+}
+.header__right button{
+    padding: 1rem 3rem;
+    background-color: $cyan-blue;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+.header__right button a{
+    text-decoration: none;
+    color: white;
+   
+}
+.header__middle{
+    @include flex(center,center)
+}
+.header-image{
+  height: 100px;
+  width: 100px;
+  border-radius:20px;
+  text-align: center;
+}
+.hero{
+    margin-top: 3rem;
+    @include flex(space-between,center);
+    width: 100%;
+    height: auto;
+    background-color: $orange;
+    margin-bottom: 3rem;
+   
+}
+.hero__right{
+    width: 50%;
+}
+.hero__left{
+    width: 50%;
+}
+.hero h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 4rem ;
+}
+.hero ul{
+    list-style-type: none;
+    @include flex(space-between,center,column);
+    gap: 4rem;
+    font-size: 4rem;
+   
+    
+}
+.hero ul a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+.hero ul a:hover{
+    background-color: $cyan-blue;
+  
+}
