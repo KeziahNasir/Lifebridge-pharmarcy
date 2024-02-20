@@ -3,6 +3,9 @@
 
 .headerpart{
     @include flex(space-between,center);
+    background-color: aliceblue;
+    margin-top: 2rem;
+    text-align: center;
     
 }
 .header__right button{

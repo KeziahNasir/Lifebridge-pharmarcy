@@ -10,6 +10,9 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: aliceblue;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .header__right button {
@@ -179,6 +182,152 @@ footer p {
 
 .footer {
   width: 30%;
+}
+
+.headerabout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  border-bottom: 3px solid #ff6900;
+}
+
+.abouthero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about__center ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.about__center ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.about__center ul a:hover {
+  background-color: #0693e3;
+  color: white;
+  border-radius: 30px;
+}
+
+.mainabout {
+  background: url(../../../images/about.jpg) no-repeat center center/cover;
+  height: 70vh;
+}
+
+.mainabout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.abouthero h1 {
+  color: #0693e3;
+}
+
+.aboutcontent {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.aboutcontent h1 {
+  font-size: 3rem;
+  color: #0693e3;
+}
+
+.aboutcontent h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.aboutcontent p {
+  font-size: 1.2rem;
+  word-spacing: 5px;
+}
+
+.vision {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #00d084;
+}
+
+.mission {
+  width: 45%;
+}
+
+.aboutvision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+}
+
+.aboutvision h1 {
+  font-size: 3rem;
+}
+
+.aboutvision h3 {
+  font-size: 2rem;
+}
+
+.aboutvision h5 {
+  font-size: 1.6rem;
+}
+
+.aboutvision p {
+  font-size: 1.2rem;
+  word-spacing: 5px;
+}
+
+.aboutimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+}
+
+.aboutimage h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.aboutimage p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.ceo {
+  position: absolute;
+  bottom: 30%;
+  left: 60%;
 }
 
 .container {
