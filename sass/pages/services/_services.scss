@@ -1,23 +1,125 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
 
-.navlogo{
-    @include flex(center,center);
+.header__nav {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../images/medicene.jpg) no-repeat center center/cover;
+  height: 70vh;
+  margin-top: 5rem;
 }
-.header__list ul{
-    @include flex(space-around,center);
-    margin-top: 4rem;
-    border-bottom: 4px solid $orange;
+.navbar {
+  @include flex(space-around, center);
 }
-.header__list ul li{
-    list-style-type: none;
+.nav__left img {
+  margin-top: 3rem;
 }
-.header__list ul a{
-    text-decoration: none;
-    color: $cyan-blue;
-    font-size: 3rem;
+
+.header__right ul {
+  @include flex(space-around, center);
+  list-style-type: none;
+  gap: 3rem;
+
+  border-bottom: 4px solid $orange;
 }
-.header__list ul a:hover{
-    border-bottom: 8px solid $green-cyan;
-    color: black;
+.header__rigth ul li {
+  list-style-type: none;
+}
+.header__right ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.header__right ul a:hover {
+  border-bottom: 8px solid $green-cyan;
+  color: $cyan-blue;
+}
+.navcontent {
+  @include flex(center, center, column);
+  gap: 2rem;
+}
+.navcontent h1 {
+  font-size: 3rem;
+  color: $green-cyan;
+  font-weight: bold;
+}
+.navcontent h2 {
+  font-size: 2rem;
+  color: $cyan-blue;
+  font-weight: bold;
+}
+.navcontent video {
+  margin-top: -6rem;
+}
+.navhero {
+  @include flex(space-around, center);
+  gap: 2rem;
+}
+.navhero__left {
+  width: 30%;
+  height: 45vh;
+  text-align: center;
+  background-color: $green-cyan;
+  border: 6px solid $cyan-blue;
+  border-radius: 10%;
+  margin-bottom: 4rem;
+}
+.navcontainer h4 {
+  color: $cyan-blue;
+  text-align: center;
+}
+.navcontainer h1{
+color: $cyan-blue;
+font-size: 3rem;
+text-align: center;
+padding: 2rem;
+}
+.navcontainer h2{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navcontainer p{
+  font-size: 1.3rem;
+  word-spacing: 3px;
+  padding: 1rem 0;
+}
+.navcontainer button{
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background-color: $cyan-blue;
+  border: none;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px){
+  .header__nav{
+    height: 90vh;
+  }
+  .navbar{
+    @include flex(space-around,center,column);
+    gap: 2rem;
+  }
+  .header__right ul a{
+    font-size: 1.2rem;
+  }
+  .navhero{
+    @include flex(space-around,center,column);
+    gap: 1rem;
+  }
+  .navhero__left{
+    width: 100%;
+  }
+  .navcontent h1{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  .navcontent h2{
+    font-size:1.8rem ;
+  }
+  .navcontainer h4 {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+  }
+  .navcontainer h1{
+    font-size: 2.5rem;
+  } 
 }

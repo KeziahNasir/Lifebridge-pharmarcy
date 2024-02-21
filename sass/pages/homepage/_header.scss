@@ -54,9 +54,8 @@
     list-style-type: none;
     @include flex(space-between,center,column);
     gap: 4rem;
-    font-size: 4rem;
-   
-    
+    font-size: 3rem;
+
 }
 .hero ul a{
     color: white;
@@ -67,3 +66,36 @@
     background-color: $cyan-blue;
   
 }
+@media screen and (max-width: 600px){
+    .header__right button{
+        text-align: center;
+        padding: 1rem 1rem;
+        @include flex(center,center);
+        font-size:1.4rem;
+    }
+    .header__middle{
+        display: none;
+    }
+    .hero__left img{
+        width: 300px;
+    }
+    .hero{
+        @include flex(space-around,center,column);
+    }
+    .hero h1{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+    }
+    .hero ul{
+        font-size: 1.2rem;
+    }
+    .hero__right{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+}
+  

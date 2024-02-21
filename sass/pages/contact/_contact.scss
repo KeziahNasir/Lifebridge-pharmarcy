@@ -1,12 +1,12 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
-.hero {
+.hero1 {
   @include flex(space-around, center);
 }
 
 .hero__container {
   @include flex(space-around, center);
-  margin-top: 15rem;
+  margin-top: 30rem;
 }
 .container__left{
   @include flex(center,center);
@@ -14,7 +14,4 @@
   background-color: $green-cyan;
   width: 30%;
   height: 30vh;
-}
-input[type="text"]{
-  background-color:r
 }

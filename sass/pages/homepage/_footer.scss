@@ -1,65 +1,105 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
-footer{
-    background-color: $green-cyan;
-    height: 70vh;
-    text-align: center;
+footer {
+  background-color: $green-cyan;
+  height: 70vh;
+  text-align: center;
 }
-.footer__logo{
-    @include flex(center,center);
-    text-align: center;
+.footer__logo {
+  @include flex(center, center);
+  text-align: center;
 }
-.footercontent{
-    @include flex(space-around,center);
+.footer__logo img {
+  margin-top: 4rem;
 }
-.footercontent h1{
-    padding: 2rem 0;
+.footercontent {
+  @include flex(space-around, center);
 }
-.footercontent h3{
-    padding: 1rem 0;
+.footercontent h1 {
+  padding: 2rem 0;
 }
-footer button a{
-    text-decoration: none;
-    color: white;
+.footercontent h3 {
+  padding: 1rem 0;
 }
-.btn-top button{
-    padding: 1rem 3rem;
-    background-color: $cyan-blue;
-    font-size: 2rem;
-    border: none;
-    border-radius: 10px;
+footer button a {
+  text-decoration: none;
+  color: white;
 }
-.footer-input button{
-    padding: 1rem 3rem;
-    background-color: $cyan-blue;
-    font-size: 2rem;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+.btn-top button {
+  padding: 1rem 3rem;
+  background-color: $cyan-blue;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
 }
-.footer-input{
-    @include flex(center,center);
-    
+.footer-input button {
+  padding: 1rem 3rem;
+  background-color: $cyan-blue;
+  font-size: 2rem;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-footer input{
-    padding: 1.6rem 3rem;
+.footer-input {
+  @include flex(center, center);
+}
+footer input {
+  padding: 1.6rem 3rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.btn-top {
+  @include flex(center, center);
+  margin-top: 3rem;
+}
+footer p {
+  word-spacing: 7px;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+.footer__center {
+  text-align: center;
+}
+.footer {
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .footercontent {
+    @include flex(space-around, center, column);
+  }
+  footer {
+    height: 90vh;
+    width: 100%;
+  }
+  .footerpart{
+    width: 100%;
+  }
+  .footercontent{
+    width: 100%;
+  }
+  .footer{
+    width: 100%;
+  }
+  footer input {
+    padding: 1rem 2rem;
     font-size: 1rem;
-    border: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.btn-top{
-    @include flex(center,center);
-    margin-top: 3rem;
-}
-footer p{
-    word-spacing: 7px;
-    padding: 2rem 0;
-    font-size: 1.2rem;
-}
-.footer__center{
-    text-align: center;
-}
-.footer{
-    width: 30%;
+  }
+  .footer-input {
+    @include flex(center, center);
+    width: 100%;
+  }
+  .footer-input button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .btn-top button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
 }
