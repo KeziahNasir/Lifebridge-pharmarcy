@@ -1,11 +1,11 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
-
-
+    
 .headerabout{
     @include flex(space-between,center);
     text-align: center;
-    border-bottom: 3px solid $orange;
+    border-bottom: 3px solid $cyan-blue;
+    background-color: $green-cyan;
 }
 .abouthero{
     @include flex(center,center,column);

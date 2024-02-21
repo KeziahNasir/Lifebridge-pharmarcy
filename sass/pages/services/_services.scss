@@ -1,2 +1,23 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
+
+.navlogo{
+    @include flex(center,center);
+}
+.header__list ul{
+    @include flex(space-around,center);
+    margin-top: 4rem;
+    border-bottom: 4px solid $orange;
+}
+.header__list ul li{
+    list-style-type: none;
+}
+.header__list ul a{
+    text-decoration: none;
+    color: $cyan-blue;
+    font-size: 3rem;
+}
+.header__list ul a:hover{
+    border-bottom: 8px solid $green-cyan;
+    color: black;
+}
