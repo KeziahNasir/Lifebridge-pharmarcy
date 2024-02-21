@@ -1,0 +1,32 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 15rem;
+}
+
+.container__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 2rem;
+  background-color: #00d084;
+  width: 30%;
+  height: 30vh;
+}
+
+input[type=text] {
+  background-color: r;
+}
