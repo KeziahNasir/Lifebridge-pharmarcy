@@ -117,6 +117,9 @@ transform: translateX(-300px);
 .navcontainer button:hover{
   transform: translateY(-10PX);
 }
+.header__bar{
+  display: none;
+}
 @media screen and (max-width: 872px) {
   .header__nav {
     height: 90vh;
@@ -148,5 +151,14 @@ transform: translateX(-300px);
   }
   .navcontainer h1 {
     font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 520px){
+  .header__bar{
+    display: block;
+    color: $cyan-blue;
+  }
+  .header__right ul a{
+    display: none;
   }
 }

@@ -92,6 +92,10 @@
   background-color: #0693e3;
 }
 
+.header__bar {
+  display: none;
+}
+
 @media screen and (max-width: 872px) {
   .header__right button {
     text-align: center;
@@ -129,6 +133,14 @@
   }
   .hero {
     width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__bar {
+    display: block;
+  }
+  .header__right {
+    display: none;
   }
 }
 footer {
@@ -453,6 +465,10 @@ footer p {
   left: 65%;
 }
 
+.about__bar {
+  display: none;
+}
+
 @media screen and (max-width: 872px) {
   .about__center ul a {
     font-size: 1rem;
@@ -494,6 +510,14 @@ footer p {
   }
   .aboutcenter {
     width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__bar {
+    display: block;
+  }
+  .about__center ul a {
+    display: none;
   }
 }
 @keyframes slideInLeft {
@@ -636,6 +660,10 @@ footer p {
   transform: translateY(-10PX);
 }
 
+.header__bar {
+  display: none;
+}
+
 @media screen and (max-width: 872px) {
   .header__nav {
     height: 90vh;
@@ -675,6 +703,15 @@ footer p {
   }
   .navcontainer h1 {
     font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header__bar {
+    display: block;
+    color: #0693e3;
+  }
+  .header__right ul a {
+    display: none;
   }
 }
 .hero1 {

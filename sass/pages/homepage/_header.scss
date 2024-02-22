@@ -68,6 +68,9 @@
     background-color: $cyan-blue;
   
 }
+.header__bar{
+    display: none;
+}
 @media screen and (max-width: 872px){
     .header__right button{
         text-align: center;
@@ -99,5 +102,13 @@
     .hero{
         width: 100%;
     }
+}
+@media screen and (max-width: 400px){
+.header__bar{
+    display: block;
+}
+.header__right{
+display: none;
+}
 }
   
