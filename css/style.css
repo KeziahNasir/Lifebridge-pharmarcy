@@ -108,7 +108,6 @@ footer {
 }
 
 .footercontent {
-.hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -233,19 +232,6 @@ footer p {
 }
 
 .mainabout {
-  flex-wrap: no-wrap;
-}
-
-.hero__container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  margin-top: 15rem;
-}
-
-.container__left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,16 +364,103 @@ footer p {
   color: black;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  flex-wrap: no-wrap;
+.hero1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+}
+
+.container__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+
+.container__left {
   background-color: #00d084;
-  width: 30%;
-  height: 30vh;
+  text-align: center;
+  height: 20vh;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 20px;
 }
 
 input[type=text] {
-  background-color: r;
+  border-radius: 6px;
+  border: 3px solid lightgray;
+  width: 100%;
+  height: 50px;
+}
+
+.container__right input {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+.container__right [type=submit] {
+  padding: 2rem 3rem;
+  background-color: #0693e3;
+  border-radius: 15px;
+}
+
+.container__right textarea {
+  padding: 4rem 8rem;
+}
+
+@media screen and (max-width: 872px) {
+  .header__list ul a {
+    font-size: 1.5rem;
   }
+  .hero1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .hero__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .container__contact {
+    width: 100%;
+  }
+  .container__right {
+    margin-top: 5rem;
+  }
+  .container__hero img {
+    width: 800px;
+  }
+  .container__image img {
+    width: 50px;
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

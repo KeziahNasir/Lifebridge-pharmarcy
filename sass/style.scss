@@ -3,9 +3,10 @@
 @use "./pages/homepage/footer";
 @use "./pages/about/about";
 @use "./pages/services/services";
+@use "./pages/contact/contact";
 .container{
     width: 90%;
     margin: 0 auto;
 }
-@use "./pages/contact/contact";
+
 
