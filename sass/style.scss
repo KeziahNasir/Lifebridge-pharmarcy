@@ -4,18 +4,18 @@
 @use "./pages/about/about";
 @use "./pages/services/services";
 
-@use "./pages/contact/contact";*
 
-{
+@use "./pages/contact/contact";
+@use "./pages/prescriptions/_prescriptions";
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-
-@use "./pages/contact/contact";
-@use "./pages/prescriptions/_prescriptions";
 
 .container{
     width: 90%;
