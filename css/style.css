@@ -92,7 +92,7 @@
   background-color: #0693e3;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 872px) {
   .header__right button {
     text-align: center;
     padding: 1rem 1rem;
@@ -132,7 +132,7 @@
   }
 }
 footer {
-  background-color: #00d084;
+  background-color: #2dd6c1;
   height: 70vh;
   text-align: center;
 }
@@ -227,7 +227,7 @@ footer p {
   width: 30%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 872px) {
   .footercontent {
     display: flex;
     justify-content: space-around;
@@ -273,6 +273,14 @@ footer p {
     font-size: 1rem;
   }
 }
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .headerabout {
   display: flex;
   justify-content: space-between;
@@ -281,7 +289,7 @@ footer p {
   flex-wrap: wrap;
   text-align: center;
   border-bottom: 3px solid #0693e3;
-  background-color: #00d084;
+  background-color: #2dd6c1;
   height: 20vh;
 }
 
@@ -335,7 +343,9 @@ footer p {
 }
 
 .abouthero h1 {
+  margin-top: 2rem;
   color: #0693e3;
+  animation: slideInLeft 8s ease-in;
 }
 
 .aboutcontent {
@@ -365,7 +375,7 @@ footer p {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #00d084;
+  background-color: #2dd6c1;
 }
 
 .mission {
@@ -400,6 +410,21 @@ footer p {
   font-weight: bold;
 }
 
+.aboutcenter {
+  padding: 4rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.aboutcenter h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.aboutcenter p {
+  font-size: 1.6rem;
+}
+
 .aboutimage {
   display: flex;
   justify-content: center;
@@ -419,6 +444,7 @@ footer p {
 .aboutimage p {
   font-size: 1.2rem;
   color: white;
+  font-weight: bold;
 }
 
 .ceo {
@@ -427,7 +453,7 @@ footer p {
   left: 65%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 872px) {
   .about__center ul a {
     font-size: 1rem;
   }
@@ -465,6 +491,17 @@ footer p {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .aboutcenter {
+    width: 100%;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 .header__nav {
@@ -507,7 +544,7 @@ footer p {
 }
 
 .header__right ul a:hover {
-  border-bottom: 8px solid #00d084;
+  border-bottom: 8px solid #2dd6c1;
   color: #0693e3;
 }
 
@@ -522,7 +559,7 @@ footer p {
 
 .navcontent h1 {
   font-size: 3rem;
-  color: #00d084;
+  color: #2dd6c1;
   font-weight: bold;
 }
 
@@ -549,8 +586,8 @@ footer p {
   width: 30%;
   height: 45vh;
   text-align: center;
-  background-color: #00d084;
-  border: 6px solid #0693e3;
+  background-color: #2dd6c1;
+  border: 6px solid lightgrey;
   border-radius: 10%;
   margin-bottom: 4rem;
 }
@@ -565,6 +602,14 @@ footer p {
   font-size: 3rem;
   text-align: center;
   padding: 2rem;
+  animation-name: slideInLeft;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transform: translateX(-100px);
 }
 
 .navcontainer h2 {
@@ -585,9 +630,14 @@ footer p {
   background-color: #0693e3;
   border: none;
   border-radius: 10px;
+  transition: transform 0.5s ease-in-out 0s;
 }
 
-@media screen and (max-width: 600px) {
+.navcontainer button:hover {
+  transform: translateY(-10PX);
+}
+
+@media screen and (max-width: 872px) {
   .header__nav {
     height: 90vh;
   }
@@ -652,7 +702,7 @@ footer p {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: #00d084;
+  background-color: #2dd6c1;
   width: 30%;
   height: 30vh;
 }

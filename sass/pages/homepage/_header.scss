@@ -1,6 +1,8 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
 
+
+
 .headerpart{
     @include flex(space-between,center);
     background-color: aliceblue;
@@ -21,7 +23,7 @@
    
 }
 .header__middle{
-    @include flex(center,center)
+    @include flex(center,center);
 }
 .header-image{
   height: 100px;
@@ -66,7 +68,7 @@
     background-color: $cyan-blue;
   
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 872px){
     .header__right button{
         text-align: center;
         padding: 1rem 1rem;

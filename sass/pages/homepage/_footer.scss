@@ -65,7 +65,7 @@ footer p {
 .footer {
   width: 30%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 872px) {
   .footercontent {
     @include flex(space-around, center, column);
   }
