@@ -2,16 +2,72 @@
 @use "../../utilities/variables" as *;
 .hero1 {
   @include flex(space-around, center);
+  margin-top: 4rem;
 }
+
+// .container__left{
+//   margin-bottom: 20rem;
 
 .hero__container {
   @include flex(space-around, center);
+  margin-top: 9rem;
+  margin-bottom: 10rem;
   margin-top: 30rem;
 }
-.container__left{
-  @include flex(center,center);
+.container__contact {
+  @include flex(center, center);
   gap: 2rem;
+  
+}
+.container__left{
   background-color: $green-cyan;
-  width: 30%;
-  height: 30vh;
+  text-align: center;
+  height: 20vh;
+  width: 30vh;
+  @include flex(center,center,column);
+  border-radius: 20px;
+  }
+
+input[type="text"] {
+  border-radius: 6px;
+  border: 3px solid lightgray;
+  width: 100%;
+  height: 50px;
+}
+.container__right input {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+.container__right [type="submit"] {
+  padding: 2rem 3rem;
+  background-color: $cyan-blue;
+  border-radius: 15px;
+}
+.container__right textarea {
+  padding: 4rem 8rem;
+}
+@media screen and (max-width: 872px) {
+  .header__list ul a {
+    font-size: 1.5rem;
+  }
+  .hero1 {
+    @include flex(space-around, center, column);
+    max-width: 100%;
+  }
+  .hero__container {
+    @include flex(space-around, center, column);
+    gap: 2rem;
+  }
+  .container__contact{
+    width: 100%;
+  }
+  .container__right {
+    margin-top: 5rem;
+  }
+  .container__hero img {
+    width: 800px;
+  }
+  .container__image img {
+    width: 50px;
+  }
 }
