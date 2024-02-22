@@ -55,8 +55,8 @@
 .hero__container {
   @include flex(space-around, center);
   margin-top: 9rem;
-  margin-bottom: 10rem;
-  margin-top: 30rem;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
 }
 .container__contact {
   @include flex(center, center);
@@ -66,10 +66,11 @@
 .container__left{
   background-color: $green-cyan;
   text-align: center;
-  height: 20vh;
-  width: 30vh;
+  height: 30vh;
+  width: 50vh;
   @include flex(center,center,column);
   border-radius: 20px;
+  margin-top: -5rem;
   }
 
 input[type="text"] {
