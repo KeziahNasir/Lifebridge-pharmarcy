@@ -43,6 +43,7 @@
   border-radius: 30px;
 }
 
+
 .hero1 {
   @include flex(space-around, center);
   margin-top: 4rem;
@@ -55,6 +56,7 @@
   @include flex(space-around, center);
   margin-top: 9rem;
   margin-bottom: 10rem;
+  margin-top: 30rem;
 }
 .container__contact {
   @include flex(center, center);

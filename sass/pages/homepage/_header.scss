@@ -1,6 +1,8 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variables" as *;
 
+
+
 .headerpart{
     @include flex(space-between,center);
     background-color: aliceblue;
@@ -21,7 +23,7 @@
    
 }
 .header__middle{
-    @include flex(center,center)
+    @include flex(center,center);
 }
 .header-image{
   height: 100px;
@@ -54,9 +56,8 @@
     list-style-type: none;
     @include flex(space-between,center,column);
     gap: 4rem;
-    font-size: 4rem;
-   
-    
+    font-size: 3rem;
+
 }
 .hero ul a{
     color: white;
@@ -67,3 +68,47 @@
     background-color: $cyan-blue;
   
 }
+.header__bar{
+    display: none;
+}
+@media screen and (max-width: 872px){
+    .header__right button{
+        text-align: center;
+        padding: 1rem 1rem;
+        @include flex(center,center);
+        font-size:1.4rem;
+    }
+    .header__middle{
+        display: none;
+    }
+    .hero__left img{
+        width: 300px;
+    }
+    .hero{
+        @include flex(space-around,center,column);
+    }
+    .hero h1{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+    }
+    .hero ul{
+        font-size: 1.2rem;
+    }
+    .hero__right{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+.header__bar{
+    display: block;
+}
+.header__right{
+display: none;
+}
+}
+  
