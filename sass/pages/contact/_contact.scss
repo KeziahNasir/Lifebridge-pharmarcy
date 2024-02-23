@@ -99,28 +99,64 @@ input[type="text"] {
   background-color: $cyan-blue;
   margin-bottom: 4rem;
 }
-@media screen and (max-width: 872px) {
-  .header__list ul a {
-    font-size: 1.5rem;
-  }
-  .hero1 {
-    @include flex(space-around, center, column);
-    max-width: 100%;
-  }
-  .hero__container {
-    @include flex(space-around, center, column);
-    gap: 2rem;
-  }
-  .container__contact{
-    width: 100%;
-  }
-  .container__right {
-    margin-top: 5rem;
-  }
-  .container__hero img {
-    width: 800px;
-  }
-  .container__image img {
-    width: 50px;
-  }
+.about__bar{
+  display: none;
 }
+@media screen and (max-width: 872px){
+  .about__center ul li a{
+      font-size: 1rem;
+  }
+  .about__right{
+    display: none;
+}
+.headerabout{
+    @include flex(space-around,center,column);
+    gap: 2rem;
+}
+.aboutcenter{
+    width: 100%;
+}
+.hero1 img{
+  width: 550px;
+  margin-left:-10rem ;
+
+}
+.hero1{
+  width: 90%;
+  margin: 0 auto;
+   @include flex(space-between,center,column);
+  gap: 2rem;
+}
+}
+.hero__container{
+  @include flex(space-around,center,column);
+  gap: 2rem;
+}
+
+.container__left{
+  margin: 1rem 0;
+  width: 90%;
+}
+
+@media screen and (max-width: 520px){
+    .about__bar{
+        display: block;
+        text-align: center;
+    }
+    .about__center ul a{
+        display: none;
+    }
+    .hero1 img{
+      width: 450px;
+}
+.container__right form{
+width: 100%;
+ margin-left: -8rem;
+}
+.text{
+  font-size: 2rem;
+}
+}
+  
+
+ 
